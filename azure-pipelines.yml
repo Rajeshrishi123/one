@@ -4,13 +4,13 @@ trigger:
 - main
 
 pool:
-  name: slave-1
+  name: slave-2
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Run a one-line script'
+  displayName: 'stage-1'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  displayName: 'stage-2'
